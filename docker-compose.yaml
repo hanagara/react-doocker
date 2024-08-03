@@ -1,0 +1,10 @@
+services:
+    front:
+        build:
+            context: .
+            dockerfile: dockerfile
+        volumes:
+            - ./front:/front
+        working_dir: /front
+        command: node
+        tty: true
